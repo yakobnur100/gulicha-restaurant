@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER Gulicha restaurant</title>
+    <head>
+        <body>
+            <h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Place Your Order</b> </h1>
+                <div class="container"><br>
+
+        <h2>Customer Information</h2>
+        <form action="submit_order.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50"    required></textarea><br><br>    
+            <label for="payment_method">Payment Method:</label>
+            <select id="payment_method" name="payment_method" required> 
+                <option value="cash_on_delivery">Cash on Delivery</option>
+            </select><br><br>
+
+            <h2>Order Details</h2>
+
+            <label for="menu_item">Menu Item:</label>
+            <select id="menu_item" name="menu_item" required>
+                <option value="">Select an item</option>
+                <option value="Doro Wat">$1217.99 - Doro Wat</option>
+                <option value="Shekla Tibs">$1399.99 - Shekla Tibs</option>
+                <option value="Kitfo">$1478.49 - Kitfo</option>
+                <option value="Shiro Wat">$299.99 - Shiro Wat</option>
+                <option value="Gomen">$652.99 - Gomen</option>
+                <option value="Chechebsa">$349.99 - Chechebsa</option>
+                <option value="Bula Genfo">$799.99 - Bula Genfo</option>
+                <option value="Misir Besiga Wet">$779.99 - Misir Besiga Wet</option>
+            </select><br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+            <input type="submit" value="Place Order">
+        
+        </body>
+    </head>
